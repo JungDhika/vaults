@@ -24,7 +24,7 @@ function masuk(){
     window.location.href = "../logsign/login.html"
 }
 function daftar(){
-    window.location.href = "../logsigndaftar.html"
+    window.location.href = "../logsign/daftar.html"
 }
 
 function konfirmasi(){
