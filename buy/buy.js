@@ -21,10 +21,10 @@ close.addEventListener('click', (event)=>{
 // WINDOW LOCATION
 
 function masuk(){
-    window.location.href = "login.html"
+    window.location.href = "../logsign/login.html"
 }
 function daftar(){
-    window.location.href = "daftar.html"
+    window.location.href = "../logsigndaftar.html"
 }
 
 function konfirmasi(){
