@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaults</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="loginsign.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+  
+<!-- ============================navbar============================================ -->
+      
+    <nav class="navbar navbar-light bg-light sticky-top" style="box-shadow: 0px 3px 3px 1px rgba(128, 128, 128, 0.126);">
+      <div class="container-fluid p-0 mx-3">
+
+        <div class="center">
+              <button class="button-hidden" onclick="sidebarBtn();">
+                <img src="../img/list.svg">
+              </button>
+          <a class="navbar-brand font-jaro m-0 p-0 center" href="../index.html">
+              <img src="../img/flower.svg" alt="" width="35" height="35" style="margin: 0px 0px 0px 10px;">
+              <h1 style="margin: 0px 0px 0px 10px;">VAULTS</h1>
+          </a>
+        </div>
+      </div> 
+    </nav>
+
+
+<!-- ============================sidebar============================================ -->
+
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-wrap ms-4 me-4 mt-4 font-jaro">
+          <h1>VAULTS</h1>
+          <a href="../index.html">Beranda</a>
+          <a href="#">Notifikasi</a>
+          <a href="#">Bantuan</a>
+          <a href="#">Informasi Profil</a>
+
+          <br>
+          <button class="log-button mt-3" onclick="daftar()">
+            Daftar
+          </button>
+          <button class="log-button mt-2" onclick="masuk()">
+            Masuk
+          </button>
+        </div>
+    </div>
+
+    <div class="side-close" id="sideClose"></div>
+
+
+<!-- ======================================================================================= -->
+
+    <div class="container d-flex justify-content-center mt-5" style="margin-bottom: 150px;">
+      <card class="card pt-5 ps-5 pe-5 pb-0" style="width: 100%; max-width: 500px; border-radius: 20px;">
+        <div class="text-center mb-3" style="width: 100%; background-color: white;">
+          <h1 class="text-center">Daftar</h1>
+        </div>
+
+        <form class="ps-0 pe-0 ps-lg-5 pe-lg-5 pt-4">
+          <div class="mb-3">
+            <p class="form-label fs-5" style="color: #818181;">Username</p>
+                <div class="form-ctn">
+                    <img src="../img/User.png" class="icon-form">
+                    <input type="text" placeholder="Masukan Username" style="width: 100%;" class="mb-2">
+                </div>
+          </div>
+          <div class="mb-3">
+            <p class="form-label fs-5" style="color: #818181;">Email</p>
+                <div class="form-ctn">
+                    <img src="../img/lock.png" class="icon-form">
+                    <input type="text" placeholder="Masukan Email" style="width: 100%;" class="mb-2">
+                </div>
+          </div>
+          <div class="mb-1">
+            <p class="form-label fs-5" style="color: #818181;">Password</p>
+                <div class="form-ctn">
+                    <img src="../img/lock.png" class="icon-form">
+                    <input type="text" placeholder="Masukan Password" style="width: 100%;" class="mb-2">
+                </div>
+          </div>
+          <div class="mb-3 d-flex justify-content-end">
+            <a href="#" style="text-decoration: none; color: #818181;">Lupa Password?</a>
+          </div>
+          <div class="mt-5 mb-4 d-flex justify-content-center">
+            <button class="login mt-2" onclick="masuk()" style="width: 200px; background-color: 42568A;">
+              Daftar
+            </button>
+          </div>
+        </form>
+
+          <p class="d-flex justify-content-center">Sudah memiliki akun? <span><a href="login.html" style="color:#818181">Login!</a></span></p>
+
+
+      </card>
+    </div>
+
+    <div class="position-relative bottom-0">
+      <div class="footer-box pe-3 ps-3 m-0 d-flex justify-content-between align-items-center" style="color: white;">
+        <p class="p-0 m-0">© Copyright VAULTS 2024   |   Kebijakan Privasi   |   Syarat & Ketentuan | FAQ</p>
+        <div class="mx-4 d-flex">
+          <img src="../img/fb.svg" class="social-ico">
+          <img src="../img/ig.svg" class="social-ico">
+          <img src="../img/tiktok.svg" class="social-ico">
+      </div>
+      </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

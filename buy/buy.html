@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaults</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="buy.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+  
+<!-- ============================navbar============================================ -->
+      
+    <nav class="navbar navbar-light bg-light sticky-top" style="box-shadow: 0px 3px 3px 1px rgba(128, 128, 128, 0.126);">
+      <div class="container-fluid p-0 mx-3">
+
+        <div class="center">
+              <button class="button-hidden" onclick="sidebarBtn();">
+                <img src="../img/list.svg">
+              </button>
+          <a class="navbar-brand font-jaro m-0 p-0 center" href="../index.html">
+              <img src="../img/flower.svg" alt="" width="35" height="35" style="margin: 0px 0px 0px 10px;">
+              <h1 style="margin: 0px 0px 0px 10px;">VAULTS</h1>
+          </a>
+        </div>
+      </div> 
+    </nav>
+
+
+<!-- ============================sidebar============================================ -->
+
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-wrap ms-4 me-4 mt-4 font-jaro">
+          <h1>VAULTS</h1>
+          <a href="../index.html">Beranda</a>
+          <a href="#">Notifikasi</a>
+          <a href="#">Bantuan</a>
+          <a href="#">Informasi Profil</a>
+
+          <br>
+          <button class="log-button mt-3" onclick="daftar()">
+            Daftar
+          </button>
+          <button class="log-button mt-2" onclick="masuk()">
+            Masuk
+          </button>
+        </div>
+    </div>
+
+    <div class="side-close" id="sideClose"></div>
+
+
+<!-- ======================================================================================= -->
+
+<!-- container-kiri -->
+<div class="container-fluid d-flex flex-column" style="min-height: 100vh;">
+  <div class="row flex-grow-1 mx-1 mx-lg-4">
+
+    <div class="col-12 col-lg-4 d-flex align-items-start justify-content-start flex-column mt-5">
+
+      <div>
+        <img src="../img/codm.png" alt="" style="width: 100%; height: auto; border-radius: 20px;">
+      </div>
+
+      <div class="text-center font-cabin fs-2 px-0 py-3">Call Of Duty Mobile</div>
+
+      <div class="box-id">
+          <p>Langkah langkah menemukana ID Pemain di game Call Of Duty Mobile : </p>
+
+          <p>1. Buka game terlebih dahulu</p>
+          <p>2. Pergi ke setting lalu ke pengaturan Legal & Privasi</p>
+          <p>3. Di sana anda dapat melihat ID pemain</p>
+      </div>
+
+    </div>
+
+
+    <!-- container-kanan -->
+    <div class="col-12 col-lg-8 d-flex align-items-center justify-content-start flex-column">
+
+
+      <!-- ======================masukan id=========================================================== -->
+      <div class="col-11 col-lg-11 box-id mt-5">
+        <div class="number">1</div>
+        <div class="row p-4  pe-lg-5 ps-lg-5 box-id-ctn">
+            <h4 class="pl-5">Masukan PlayerID</h4>
+                <div class="box-sub p-0" >
+                  <input type="text" placeholder="Masukan ID disini" class="p-3"> 
+                </div>
+        </div>
+      </div>
+
+
+      <!-- ====================pilih nominal========================================================== -->
+      <div class="col-11 col-lg-11 box-id mt-5">
+        <div class="number">2</div>
+        <div class="row p-4  pe-lg-5 ps-lg-5 box-id-ctn">
+            <h4 class="pl-5">Pilih Nominal TopUp</h4>
+
+            <div class="container-fluid nominal-container d-flex align-items-center justify-content-center flex-row">
+              <div class="row flex-grow-1 p-1 p-lg-5">
+
+                  <div class="col-6 col-lg-3 p-2" >
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-center align-items-center flex-column p-3">
+                        <p class="m-0 cp">30 CP</p>
+                        <img src="../img/CP.png" class="p-3">
+                        <p class="m-0 curency" style="color: red;">Rp.5000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-center align-items-center flex-column p-3">
+                        <p class="m-0 cp">60 CP</p>
+                        <img src="../img/CP.png" class="p-3">
+                        <p class="m-0 curency" style="color: red;">Rp.9000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-center align-items-center flex-column p-3">
+                        <p class="m-0 cp">130 CP</p>
+                        <img src="../img/CP.png" class="p-3">
+                        <p class="m-0 curency" style="color: red;">Rp.20.000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-center align-items-center flex-column p-3">
+                        <p class="m-0 cp">320 CP</p>
+                        <img src="../img/CP.png" class="p-3">
+                        <p class="m-0 curency" style="color: red;">Rp.50.000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-center align-items-center flex-column p-3">
+                        <p class="m-0 cp">645 CP</p>
+                        <img src="../img/CP.png" class="p-3">
+                        <p class="m-0 curency" style="color: red;">Rp.90.000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-center align-items-center flex-column p-3">
+                        <p class="m-0 cp">800 CP</p>
+                        <img src="../img/CP.png" class="p-3">
+                        <p class="m-0 curency" style="color: red;">Rp.110.000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-center align-items-center flex-column p-3">
+                        <p class="m-0 cp">1300 CP</p>
+                        <img src="../img/CP.png" class="p-3">
+                        <p class="m-0 curency" style="color: red;">Rp.180.000</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-lg-3 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-center align-items-center flex-column p-3">
+                        <p class="m-0 cp">1800 CP</p>
+                        <img src="../img/CP.png" class="p-3">
+                        <p class="m-0 curency" style="color: red;">Rp.200.000</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+              </div>
+            </div>
+
+         
+
+        </div>
+      </div>
+
+<!-- ======================================================================================= -->
+      <div class="col-11 col-lg-11 box-id mt-5">
+        <div class="number">3</div>
+        <div class="row p-4  pe-lg-5 ps-lg-5 box-id-ctn">
+            <h4 class="pl-5">Pilih Metode Pembayaran</h4>
+
+            <div class="container-fluid nominal-container d-flex align-items-center justify-content-center flex-row">
+              <div class="row flex-grow-1 p-1 p-lg-5">
+
+                  <div class="col-12 col-lg-6 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-between align-items-center flex-row p-3">
+                        <img src="../img/payment/gopay.png" class="p-0" height="40px">
+                        <h4 class="m-0 font-h4">Gopay</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-between align-items-center flex-row p-3">
+                        <img src="../img/payment/dana.png" class="p-0" height="40px">
+                        <h4 class="m-0 font-h4">Dana</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-between align-items-center flex-row p-3">
+                        <img src="../img/payment/sp.png" class="p-0" height="40px">
+                        <h4 class="m-0 font-h4">ShopeePay</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-between align-items-center flex-row p-3">
+                        <img src="../img/payment/ovo.png" class="p-0" height="40px">
+                        <h4 class="m-0 font-h4">OVO</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-between align-items-center flex-row p-3">
+                        <img src="../img/payment/qris.png" class="p-0" height="40px">
+                        <h4 class="m-0 font-h4">QRIS</h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 p-2">
+                    <div class="nominal-box">
+                      <div class="d-flex justify-content-between align-items-center flex-row p-3">
+                        <img src="../img/payment/visa.png" class="p-2" height="40px">
+                        <h4 class="m-0 font-h4">QRIS</h4>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+        </div>
+      </div>    
+    </div>
+  </div>
+
+
+<!-- ======================================================================================= -->
+  <div class="col-11 col-lg-11 box-id mt-5 mb-5">
+    <div class="number">4</div>
+    <div class="p-4  pe-lg-5 ps-lg-5 box-id-ctn">
+        <h4 class="pl-5">Konfirmasi Pembayaran!</h4>
+        <p>Harap masukan Email! untuk mendapatkan Bukti pembayaran</p>
+            <div class="box-sub p-0" >
+              <input type="text" placeholder="Masukan Email anda disini" class="p-3"> 
+            </div>
+        <div class="box-sub p-0 d-flex justify-content-between align-items-center flex-row mt-5">
+          <h4 class="p-0 m-0">Total Pembelian</h4>
+
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+            <p class="m-0 text-center">Rp.XXX</p>
+            <div class="button-bayar mx-3" onclick="konfirmasi()">Konfirmasi</div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+
+
+
+  
+</div>
+</div>
+</div>
+
+<!-- ======================================================================================= -->
+
+    <div class="position-relative bottom-0">
+      <div class="footer-box pe-3 ps-3 m-0 d-flex justify-content-between align-items-center" style="color: white;">
+        <p class="p-0 m-0">© Copyright VAULTS 2024   |   Kebijakan Privasi   |   Syarat & Ketentuan | FAQ</p>
+        <div class="mx-4 d-flex">
+          <img src="../img/fb.svg" class="social-ico">
+          <img src="../img/ig.svg" class="social-ico">
+          <img src="../img/tiktok.svg" class="social-ico">
+      </div>
+      </div>
+    </div>
+
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="buy.js"></script>
+</body>
+</html>
+
+
+
+

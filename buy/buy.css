@@ -1,0 +1,306 @@
+@font-face{
+    font-family: 'Jaro';
+    src: url("../fonts/Jaro-Regular-VariableFont_opsz.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'Jersey';
+    src: url("../fonts/Jersey10-Regular.ttf") format('truetype'); 
+}
+@font-face{
+    font-family: 'Cabin';
+    src: url("../fonts/Cabin-VariableFont_wdth\,wght.ttf") format('truetype'); 
+}
+
+
+
+
+
+.font-jaro{
+    font-family: 'Jaro', 'Jaro';
+}
+
+.font-cabin{
+    font-family: 'Cabin', Cabin;
+}
+
+
+body{
+    background-color: #E7E7E7;
+}
+
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.button-hidden{
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+}
+
+/* ============================sidebar============================================ */
+
+.sidebar{
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    left: -70%;
+    position: fixed;
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.sidebar-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-wrap > h1{
+    font-size: 3em;
+}
+.sidebar-wrap > a{
+    margin-top: 15px;
+    font-family:'Cabin', Cabin ;
+    font-size: 1.3em;
+    color: black;
+    transition: 0.2s;
+}
+
+.sidebar-wrap > a:hover{
+    padding-left: 10px;
+    background-color: rgba(128, 128, 128, 0.105);
+}
+
+.log-button{
+    border: none;
+    outline: none;
+    background-color: #444496;
+    border-radius: 50px;
+    height: 40px;
+    color: white;
+    font-family: 'Cabin', Cabin;
+    transition: 0.2s;
+}
+
+.log-button:hover{
+    background-color: #30307B;
+}
+
+
+.side-close{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    right: -100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.showSideBar{
+    left: 0;
+}
+
+
+.closeSideBar{
+    right: 0;
+}
+
+
+#sidebar > div > a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* =========================box============================= */
+
+
+.box-id{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 3px 1px rgba(128, 128, 128, 0.126);
+    position: relative;
+    font-family: 'Cabin', Cabin;
+    padding: 20px;
+}
+.box-sub{
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    font-family: 'Cabin', Cabin;
+}
+
+.box-sub > input:focus{
+    box-shadow: 0px 0px 1px 2px #6982E7;
+}
+
+
+
+.box-sub > input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+}
+
+.number{
+    width: 50px;
+    height: 50px;
+    background-color: #4D65A2;
+    border-radius: 100%;
+    border: 7px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-20px, -20px);
+}
+
+.sub-number{
+    width: 20px !important;
+    line-height: 20px;
+    height: 20px;
+    background-color: #4D65A2;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.nominal-box{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.nominal-box:hover{
+    box-shadow: 0px 0px 1px 2px #6982E7;
+}
+
+
+.font-h4{
+    font-size: 1em;
+
+}
+
+
+.button-bayar{
+    width: 100px;
+    height: 50px;
+    background-color: #BD5F5F;
+    border-radius: 50px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.button-bayar:hover{
+    background-color: #864040;
+    cursor: pointer;
+}
+
+
+
+
+/* =========================FOOTER============================= */
+
+.footer-box{
+    width: 100%;
+    height: 50px;
+    background-color: #1E2C50;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.footer-box > p{
+    font-size: 0.5em;
+}
+
+.social-ico{
+    width: 30px;
+}
+
+
+
+
+
+/* =========================MEDIA QUERY============================= */
+
+@media only screen and (min-width: 768px){
+    .search-img{
+        width: 30px;
+    }
+
+    .box{
+        height: auto;
+        background-color: grey;
+    }
+
+    .box-card{
+        font-size: 1.3em;
+    }
+
+    .banner-size{
+        height: 400px;
+        object-fit: cover;
+    }
+    .searchbar{
+        font-size: 1.2em;
+    }
+
+    .sidebar{
+        width: 25%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* footer============ */
+
+    .footer-box{
+        width: 100%;
+        height: 50px;
+        background-color: #1E2C50;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .social-ico{
+        width: 30px;
+    }
+
+    .footer-box > p{
+        font-size: 1em;
+    }
+}

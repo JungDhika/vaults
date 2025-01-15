@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaults</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+  
+<!-- ============================navbar============================================ -->
+      
+    <nav class="navbar navbar-light bg-light sticky-top" style="box-shadow: 0px 3px 3px 1px rgba(128, 128, 128, 0.126);">
+      <div class="container-fluid p-0 mx-3">
+
+        <div class="center">
+              <button class="button-hidden" onclick="sidebarBtn();">
+                <img src="img/list.svg">
+              </button>
+          <a class="navbar-brand font-jaro m-0 p-0 center" href="#">
+              <img src="img/flower.svg" alt="" width="35" height="35" style="margin: 0px 0px 0px 10px;">
+              <h1 style="margin: 0px 0px 0px 10px;">VAULTS</h1>
+          </a>
+        </div>
+
+        <button onclick="masuk()" class="btn rounded-pill d-none d-sm-block log-button" style="width: 100px; color: white;">
+            Masuk
+        </button>
+      </div> 
+    </nav>
+
+
+<!-- ============================sidebar============================================ -->
+
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-wrap ms-4 me-4 mt-4 font-jaro">
+          <h1>VAULTS</h1>
+          <a href="#">Beranda</a>
+          <a href="#">Notifikasi</a>
+          <a href="#">Bantuan</a>
+          <a href="#">Informasi Profil</a>
+
+          <br>
+          <button class="log-button mt-3" onclick="daftar()">
+            Daftar
+          </button>
+          <button class="log-button mt-2" onclick="masuk()">
+            Masuk
+          </button>
+        </div>
+    </div>
+
+    <div class="side-close" id="sideClose"></div>
+
+
+<!-- ============================main============================================ -->
+    <main class="p-0 mx-2 mx-md-5 mt-3">
+
+      <div id="carouselExampleInterval" class="carousel slide banner-container" data-bs-ride="carousel">
+        <div class="carousel-inner " style="border-radius: 10px; box-shadow: 0px 3px 3px 1px rgba(128, 128, 128, 0.315); border: 1px solid rgb(224, 224, 224);">
+          <div class="carousel-item active" data-bs-interval="4000" style="border-radius: 10px;">
+            <img src="img/banner1.png" class="d-block w-100 banner-size" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/banner1.png" class="d-block w-100 banner-size" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner1.png" class="d-block w-100 banner-size" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+ 
+<!-- =============search engine====================================================== -->
+        <div class="p-0 mt-3 search-wrap">
+            <input type="text" id="searchInput" placeholder="Mau Topup Game Apa?" class="searchbar"></input>
+              <img src="img/search.svg" class="search-img" id="searchBtn"> 
+        </div>       
+
+<!-- =============search-Title====================================================== -->
+        <h2 class="mt-4" id="query" style="display: none; font-family: 'Cabin', Cabin;">PENCARIAN UNTUK:</h2>
+
+
+
+
+
+<!-- =============item-galery======================================================== -->
+        <h2 class="mt-5" id="mobileTitle">POPULER MOBILE</h2>
+
+        <div class="container-fluid mt-2">
+          <div class="row">
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="pubg">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/pubg.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                    <p class="card-text text-center  font-jaro ">PUBG MOBILE</p>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="mlbb">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/mobile_legend.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">MOBILE LEGENDS</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="hok">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/honor_of_kings.png" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">HONOR OF KINGS</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="ff">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/Ff.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">FREE FIRE</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="genshin">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/genshin.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">GENSHIN IMPACT</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="cod">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/codm.png" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">COD MOBILE</p>
+                </div>
+              </a>
+            </div>
+
+
+
+
+<!-- ==================================PC============================================ -->
+        <h2 class="mt-5" id="pcTitle">POPULER PC</h2>
+            
+
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="valorant">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/valorant.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                    <p class="card-text text-center  font-jaro ">VALORANT</p>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="dota2">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/dota2.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">DOTA 2</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="apex">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/apex.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">APEX LEGENDS</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="fortnite">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/fortnite.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">FORTNITE</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="cod">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/war 2.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">WARZONE 3</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="roblox">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/Roblox.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">ROBLOX</p>
+                </div>
+              </a>
+            </div>
+            
+
+    
+
+<!-- ==================================ALLGAMES===================================== -->
+        <h2 class="mt-5" id="allTitle">GAMES LAINNYA</h2>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="wuthering">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/ww.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                    <p class="card-text text-center  font-jaro ">WUTHERING</p>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="fcm">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/FC.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">FC MOBILE</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="marvelsnap">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/marvelsnap.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">MARVEL SNAP</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="honkai">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/hsr.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">HONKAI STAR RAIL</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="honkai">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/hi3rd.png" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">HONKAI IMPACT</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="marvelduel">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/marvelduel.png" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">MARVEL DUEL</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="aov">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/aov.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                    <p class="card-text text-center  font-jaro ">ARENA OF VALOR</p>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="lol">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/will.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">LOL: WILDRIFT</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="arenabreakout">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/ab2.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">ARENA BREAKOUT</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="stumble">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/stm.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">STUMBLE GUYS</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="overwatch">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/overwatch.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">OVERWATCH</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="onmyoji">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/onmyoji.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">ONMYOJI ARENA</p>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="opm">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/opm.png" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                    <p class="card-text text-center  font-jaro ">ONE PUNCH MAN</p>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="pgr">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/pgr.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">PUNISHING GRAY </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="lol">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/lol.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">LEAGUE OF LEGENDS</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="pb">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/Pb.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">POINT BLANK</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="cod">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/MW 2.jpg" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">MODERN WARFARE</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-4 col-md-3 col-lg-2 p-1 item" id="tarkov">
+              <a class="card box" href="buy/buy.html" >
+                <img src="img/tarkov.webp" class="card-img-top box-anim" alt="...">
+                <div class="card-body box-card">
+                  <p class="card-text text-center font-jaro">TARKOV</p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </main>
+<!-- ==================================FOOTER===================================== -->
+    
+    <footer class="p-0 mx-2 mx-md-5 mt-5">
+      <div class="footerBox position-relative">
+
+        <div class="ms-4 me-4 ms-lg-5 me-lg-5 mt-5" style="color: white;">
+          <h1 class="font-jaro p-0 m-0 vault-title">VAULTS TOPUP</h1>
+          <p class="p-0 m-0">Top Up Game Favorit Anda Cepat, Aman, dan Murah!</p>
+
+          <div class="d-flex justify-content-start align-items-center mt-5">
+            <img src="img/time.png" class="icon-vault">
+            <p class="mx-3 sub-item">Proses checkout yang cepat : Memungkinkan pengguna menyelesaikan 
+              transaksi hanya dalam 3 langkah.</p>
+          </div>
+          
+          <div class="d-flex justify-content-start align-items-center mt-4">
+            <img src="img/wallet.png" class="icon-vault">
+            <p class="mx-3 sub-item">Opsi pembayaran yang lengkap : Dukungan untuk e-wallet (OVO, Gopay),
+              transfer bank, dan kartu kredit.</p>
+          </div>
+          
+          <div class="d-flex justify-content-start align-items-center mt-4">
+            <img src="img/safe.png" class="icon-vault">
+            <p class="mx-3 sub-item">Keamanan transaksi yang terjamin : Sistem keamanan yang kuat untuk 
+              memastikan data pengguna terlindungi.</p>
+          </div>
+
+        </div>
+           
+        <div class="d-flex justify-content-center mt-5 bottom-0" style="width: 100%;">
+          <div class="bar-footer">
+              <div class="mx-4">© Copyright VAULTS 2024   |   Kebijakan Privasi   |   Syarat & Ketentuan | FAQ</div>
+                  <div class="mx-4 d-flex">
+                      <img src="img/fb.svg" class="social-ico">
+                      <img src="img/ig.svg" class="social-ico">
+                      <img src="img/tiktok.svg" class="social-ico">
+                  </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
